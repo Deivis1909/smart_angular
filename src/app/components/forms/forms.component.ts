@@ -46,12 +46,22 @@ export class FormsComponent implements OnInit {
 
   }
 
+  // se a pessoa clica em filtra vem parar aqui
   onSubmit():void{
 
+    console.log(this.formulario.value)
+
+    // se formulario value é difernte de closed fechado
     if(!this.formulario.value.showClosed){
+
+      console.log("entrou");
 
       ///filtrar so pelos estabelecimentos abertos -OPENED
       this.filteredResults = this.results.filter(location => location.opened === true)
+
+    }else{
+
+      this.filteredResults = this.results;
 
     }
 
