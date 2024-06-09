@@ -1,8 +1,5 @@
-<ul>
-  <!-- pra funcionar tudo tem que ficar dentro da li-->
-  <li *ngFor="let card of unitList"><a href=""></a>
-  <!--add o componet que faz um
-  //laço for percorrrenco o unitList , add a cada item um card -->
-<app-card [card]="card" ></app-card>
-</li>
+<ul class="card-list">
+  <li *ngFor="let card of unitList">
+    <app-card [card]="card"></app-card>
+  </li>
 </ul>
