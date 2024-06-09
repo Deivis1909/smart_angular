@@ -1,5 +1,12 @@
 <div class="app-container">
   <app-header></app-header>
-  <app-forms></app-forms>
+
+  <!--(submitEvent)= vem do Forms.component.html - Output() submitEvent = new EventEmitter();  -->
+  <app-forms (submitEvent)="onSubmit()"></app-forms>
+
+  <!-- ngIf so abre component se
+  //show list receber mudança de comportamento -> | ASYNC
+  // para usar tem que importar o CommonModule no app.module.ts -->
+  <app-cards-list *ngIf="(showList | async)" [unitList]="unitsList"></app-cards-list>
 </div>
 

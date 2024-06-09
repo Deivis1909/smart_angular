@@ -1,6 +1,6 @@
-export interface Location{
-  id:number,
-  title:string,
+export interface Location {
+  id: number,
+  title: string,
   content: string,
   opened: boolean,
   mask: string,
@@ -10,8 +10,7 @@ export interface Location{
   schedules: Schedule[]
 }
 
-//schedule -> agenda
 interface Schedule {
   weekdays: string,
   hour: string
-  }
+}
