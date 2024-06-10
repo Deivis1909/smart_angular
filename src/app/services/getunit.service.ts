@@ -6,6 +6,7 @@ import { Location } from '../types/Location.interface';
 import { UnitsResponse } from '../types/UnitsResponse.interface';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,7 +17,7 @@ export class GetunitService {
 
   readonly apiurl = "https://test-frontend-developer.s3.amazonaws.com/data/locations.json";
 
-  // ESTADO -> VALOR ATUAL DA VARIAVEL 1
+  //// ESTADO -> VALOR ATUAL DA VARIAVEL 1
   //o BehaviorSubject é especialmente útil para gerenciar estados em aplicativos Angular, permitindo que os componentes compartilhem e reajam a mudanças de dados de forma reativa.
   //E stado envolve rastrear e atualizar esses dados
   //de maneira eficiente e consistente à medida que o usuário interage com a aplicação.
