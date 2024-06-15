@@ -20,7 +20,7 @@ export class GetunitService {
   //// ESTADO -> VALOR ATUAL DA VARIAVEL 1
   //o BehaviorSubject é especialmente útil para gerenciar estados em aplicativos Angular, permitindo que os componentes compartilhem e reajam a mudanças de dados de forma reativa.
   //E stado envolve rastrear e atualizar esses dados
-  //de maneira eficiente e consistente à medida que o usuário interage com a aplicação.
+  //de Maneira eficiente e consistente à medida que o usuário interage com a aplicação.
   // NO CASO ALI INICIALIZA COM UM ARRAY DO OBJETO LOCATION VAZIO e
   // FICA OBSERVANDO A MUDANÇA DE COMPORTAMENTO
   private allUnitSubject:BehaviorSubject<Location[]> = new BehaviorSubject<Location[]>([]);
